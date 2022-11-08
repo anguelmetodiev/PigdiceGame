@@ -41,10 +41,9 @@ const switchPlayer = function () {
   document.getElementById(`current-${activePlayer}`).textContent = 0
   currentScore = 0
 
-  activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+  activePlayer === 0 ? activePlayer = 1 : activePlayer = 0; // using Conditional (ternary) operator
   currentScore = 0;
 
-  // activePlayer = activePlayer === 1 ? 2 : 0;0 // using Conditional (ternary) operator
   player1El.classList.toggle('player--active')
   player2El.classList.toggle('player--active')
 }
