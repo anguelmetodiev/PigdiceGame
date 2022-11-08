@@ -41,14 +41,21 @@ const switchPlayer = function () {
   document.getElementById(`current-${activePlayer}`).textContent = 0
   currentScore = 0
 
-  activePlayer === 0 ? activePlayer = 1 : activePlayer = 0; // using Conditional (ternary) operator
+
+ activePlayer === 0 ? activePlayer = 1 : activePlayer = 0; // using Conditional (ternary) operator
+   // if(activePlayer === 0) {
+  //   activePlayer = 1
+  // } else {
+  //   activePlayer = 0;
+  // }
   currentScore = 0;
+
 
   player1El.classList.toggle('player--active')
   player2El.classList.toggle('player--active')
 }
 
-// Roll - rolling a dice and generate scores fro 1 to 6
+// Roll - rolling dice and generate scores fro 1 to 6
 btnRoll.addEventListener('click', function () {
   if (playing) {
     const dice = Math.trunc(Math.random() * 6) + 1 // get the integer part of a number by removing fractional digits
