@@ -7,7 +7,7 @@ The game was developed in 1943 by John Scame. There are many variations of this 
 
 <a href="https://pig.anguelmetodiev.com/" target="_blank"><button>View my game</button></a>
 
-<br><br>
+<br>
 2 - Player Game Developed using HTML, CSS and JavaScript.
 The UI - Interface includes: 
 <li>New Game - Reset the current game and start fresh</li>
